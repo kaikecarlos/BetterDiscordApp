@@ -1325,7 +1325,7 @@ Utils.prototype.jqDefer = function (fnc) {
 
 Utils.prototype.getHash = function () {
     return new Promise((resolve) => {
-        $.getJSON("https://api.github.com/repos/rauenzi/BetterDiscordApp/commits/master").done(function (data) {
+        $.getJSON("https://api.github.com/repos/kaikecarlos/BetterDiscordApp/commits/master").done(function (data) {
             _hash = data.sha;
             bdConfig.hash = _hash;
             resolve(_hash);
