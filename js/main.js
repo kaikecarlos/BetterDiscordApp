@@ -253,7 +253,7 @@ Core.prototype.init = async function() {
     this.initSettings();
 	classNormalizer = new ClassNormalizer();
     emoteModule = new EmoteModule();
-    utils.log("Initializing EmoteModule");
+    utils.log("Initializing Teste");
     emoteModule.init().then(() => {emoteModule.initialized = true;});
 	publicServersModule = new V2_PublicServers();
     quickEmoteMenu = new QuickEmoteMenu();
@@ -1674,7 +1674,7 @@ ThemeModule.prototype.loadThemes = function () {
         var name = bdthemes[themes[i]].name;
         if (!themeCookie[name]) themeCookie[name] = false;
         if (themeCookie[name]) $("head").append($('<style>', {id: utils.escapeID(name), html: unescape(bdthemes[name].css)}));
-		utils.log("Carregando tema themes[i].name);
+		utils.log("Carregando tema themes[i].name");
     }
     for (let theme in themeCookie) {
         if (!bdthemes[theme]) delete themeCookie[theme];
