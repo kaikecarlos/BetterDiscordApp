@@ -1674,6 +1674,7 @@ ThemeModule.prototype.loadThemes = function () {
         var name = bdthemes[themes[i]].name;
         if (!themeCookie[name]) themeCookie[name] = false;
         if (themeCookie[name]) $("head").append($('<style>', {id: utils.escapeID(name), html: unescape(bdthemes[name].css)}));
+		utils.log("Carregando tema themes[i].name);
     }
     for (let theme in themeCookie) {
         if (!bdthemes[theme]) delete themeCookie[theme];
