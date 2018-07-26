@@ -1367,13 +1367,13 @@ Utils.prototype.escapeID = function(id) {
 };
 
 Utils.prototype.log = function (message) {
-    console.log('%c[KaikoCord (BetterDiscord Fork)] %c' + message + '', 'color: #7237FF; font-weight: 700;', '');
+    console.log('%c[KaikoCord] %c' + message + '', 'color: #7237FF; font-weight: 700;', '');
 };
 
 Utils.prototype.err = function (message, error) {
-    console.log('%c[KaikoCord (BetterDiscord Fork)] %c' + message + '', 'color: #FF3932; font-weight: 700;', '');
+    console.log('%c[KaikoCord] %c' + message + '', 'color: red; font-weight: 700;', '');
     if (error) {
-        console.groupCollapsed('%cError: ' + error.message, 'color: #FF3932;');
+        console.groupCollapsed('%cError: ' + error.message, 'color: red;');
         console.error(error.stack);
         console.groupEnd();
     }
